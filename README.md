@@ -70,17 +70,19 @@ The Neural Network model is composed by 6 layers, from which the first 3 are con
 
     OUTPUT CLASSIFICATION
 
+## CLASSIFICATION RESULTS
 ![Resulting classification](result.PNG)
+> The resulting classification is represented as the probability of the image being each of the forementioned classes. Each of the class labels has a probability value presented as *0 < p(x) < 1 for x in each label*. Once all of the probabilities *p(x)* have been calculated in the forementioned *CNN*, a comparison is performed between each of the probabilities of the classes, and the highest probability is the resulting class of the image. 
 
 # Datasets Normalization
 
 The normalization vectors in the main fuction are calculated following the procedure as follows:
-1. Get all the images in the training portion of the dataset, and stack them in a (k,j,i,n) tensor.
+1. Get all the images in the training portion of the dataset, and stack them in a (k, j, i, n) tensor.
 > In the resulting tensor the representations are determined as follows:
-        * *k*: color channels of each image
-        * *j*: the height of each image
-        * *i*: the width of each image
-        * *n*: the number of color images in the dataset
+         *k*: color channels of each image;
+         *j*: the height of each image;
+         *i*: the width of each image;
+         *n*: the number of color images in the dataset;
 
 2. Once this *4-d* tensor has been calculated, flatten all of the dimensions excluding the first in order to get a *2-d* tensor with dimensions (k, j\*i\*n), hereby known as **R tensor**, with dimensions (k, m).
 
