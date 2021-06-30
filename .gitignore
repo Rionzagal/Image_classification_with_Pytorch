@@ -1,0 +1,6 @@
+#Large files and datasets ignoring
+#Datasets are downloaded when the main function is run by the first time.
+/cifar10 
+
+#Pycache ignoring
+/__pycache__
