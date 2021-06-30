@@ -75,10 +75,10 @@ The Neural Network model is composed by 6 layers, from which the first 3 are con
 The normalization vectors in the main fuction are calculated following the procedure as follows:
 1. Get all the images in the training portion of the dataset, and stack them in a (k,j,i,n) tensor.
 > In the resulting tensor the representations are determined as follows:
-* *k*: color channels of each image
-* *j*: the height of each image
-* *i*: the width of each image
-* *n*: the number of color images in the dataset
+        * *k*: color channels of each image
+        * *j*: the height of each image
+        * *i*: the width of each image
+        * *n*: the number of color images in the dataset
 
 2. Once this *4-d* tensor has been calculated, flatten all of the dimensions excluding the first in order to get a *2-d* tensor with dimensions (k, j\*i\*n), hereby known as **R tensor**, with dimensions (k, m).
 
