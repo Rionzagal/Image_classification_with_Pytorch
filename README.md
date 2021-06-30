@@ -70,6 +70,8 @@ The Neural Network model is composed by 6 layers, from which the first 3 are con
 
     OUTPUT CLASSIFICATION
 
+![Resulting classification](result.PNG)
+
 # Datasets Normalization
 
 The normalization vectors in the main fuction are calculated following the procedure as follows:
