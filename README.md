@@ -20,33 +20,33 @@ The Neural Network model is composed by 6 layers, from which the first 3 are con
 > 
 3 x 32 x 32 (input)
 
-        | kernel size = (3,3); padding = 1; stride = 1; output channels = 16; operation: Convolution; activation: ReLu;
-        V
+        | kernel size = (3,3); padding = 1; stride = 1; output channels = 16;
+        V  operation: Convolution; activation: ReLu;
 
 16 x 32 x 32
 
-        | kernel size = (2,2); stride = 2; operation: Max Pooling
-        V
+        | kernel size = (2,2); stride = 2; 
+        V operation: Max Pooling
 
 16 x 15 x 15
 
-        | kernel size = (3,3); padding = 1; stride = 1; output channels = 32; operation: Convolution; activation: ReLu;
-        V
+        | kernel size = (3,3); padding = 1; stride = 1; output channels = 32; 
+        V operation: Convolution; activation: ReLu;
 
 32 x 15 x 15
 
-        | kernel size = (2,2); stride = 1; operation: Max Pooling;
-        V
+        | kernel size = (2,2); stride = 1;
+        V operation: Max Pooling;
 
 32 x 8 x 8
 
-        | kernel size = (3,3); padding = 1; stride = 1; output channels = 64; operation: Convolution; activation ReLu;
-        V
+        | kernel size = (3,3); padding = 1; stride = 1; output channels = 64;
+        V operation: Convolution; activation ReLu;
 
 64 x 8 x 8
 
-        | kernel size = (2,2); stride = 1; operation: Max Pooling;
-        V
+        | kernel size = (2,2); stride = 1;
+        V operation: Max Pooling;
 
 64 x 4 x 4
 
